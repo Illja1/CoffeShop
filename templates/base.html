@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="{% static 'coffe/css/style.css' %}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta charset="utf-8">
+    <title>CoffeeShop</title>
+  </head>
+  <body>
+
+  {% block header%}
+    {% block main %}{% endblock %}
+    {% block conteiner %}{% endblock%}
+    {% block about%}{% endblock%}
+    {% block menu%}{% endblock%}
+    {% block rev%}{% endblock %}
+    {% block contact%}{% endblock%}
+    {% block blog%}{% endblock%}
+    {% block foteer%}{% endblock%}
+  {% endblock %}
+<script src="{% static 'coffe/js/script.js' %}"></script>
+  </body>
+</html>
